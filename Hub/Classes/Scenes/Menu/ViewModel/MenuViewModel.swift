@@ -9,7 +9,7 @@ import Foundation
 
 class MenuViewModel {
     private let service: MenuService
-    private var sections: [Section] = []
+    private(set) var sections: [Section] = []
     private var strategy: [SectionType: SectionStrategy] = [:]
     
     var reload: (() -> Void)?
@@ -58,6 +58,11 @@ class MenuViewModel {
     func didSelectItem(at indexPath: IndexPath) {
         let section = sections[indexPath.section]
         strategy[section.type]?.didSelectItem(at: indexPath, in: section)
+    }
+    
+    func sizeForHeader(in section: Int) -> CGSize {
+        let section = sections[section]
+        return strategy[section.type]?.sizeForHeader(in: section) ?? .zero
     }
     
 }

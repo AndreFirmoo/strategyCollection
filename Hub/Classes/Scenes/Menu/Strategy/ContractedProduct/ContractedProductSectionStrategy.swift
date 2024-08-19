@@ -8,6 +8,10 @@
 import Foundation
 
 class ContractedProductSectionStrategy: SectionStrategy {
+    func sizeForHeader(in section: Section) -> CGSize? {
+        return CGSize(width: UIScreen.main.bounds.width, height: 100)  // Exibir um header com 100 de altura
+    }
+    
     func numberOfItems(in section: Section) -> Int {
         return section.items.count
     }

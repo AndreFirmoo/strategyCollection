@@ -39,7 +39,8 @@ class MenuView: UIView {
         collectionView.register(MaisProdutosCell.self, forCellWithReuseIdentifier: "MaisProdutosCell")
         collectionView.register(ContractedProductCell.self, forCellWithReuseIdentifier: "ContractedProductCell")
         collectionView.register(AvailableProductCell.self, forCellWithReuseIdentifier: "AvailableProductCell")
-        
+        collectionView.register(SectionHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeaderView")
+
         return collectionView
     }()
     
@@ -86,6 +87,20 @@ extension MenuView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.didSelectItem(at: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return viewModel.sizeForHeader(in: section)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionElementKindSectionHeader {
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeaderView", for: indexPath) as! SectionHeaderView
+            let section = viewModel.sections[indexPath.section]
+            headerView.configure(with: section.name)
+            return headerView
+        }
+        return UICollectionReusableView()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -260,5 +275,38 @@ class MaisProdutosCell: UICollectionViewCell {
     
     func configure(with name: String) {
         nameLabel.text = name
+    }
+}
+
+
+class SectionHeaderView: UICollectionReusableView {
+    
+    private let nameLabel = UILabel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupViews() {
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        nameLabel.textAlignment = .center
+        
+        addSubview(nameLabel)
+        
+        NSLayoutConstraint.activate([
+            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            nameLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ])
+    }
+    
+    func configure(with title: String) {
+        nameLabel.text = title
     }
 }

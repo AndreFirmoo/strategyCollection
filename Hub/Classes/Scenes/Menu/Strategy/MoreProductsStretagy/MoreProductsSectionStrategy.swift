@@ -7,6 +7,10 @@
 
 import Foundation
 class MaisProdutosSectionStrategy: SectionStrategy {
+    func sizeForHeader(in section: Section) -> CGSize? {
+        nil
+    }
+    
     func numberOfItems(in section: Section) -> Int {
         return 1 // Mostrando apenas um item que representa a seção
     }

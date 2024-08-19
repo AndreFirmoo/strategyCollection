@@ -8,6 +8,10 @@
 import Foundation
 
 class AvailableProductSectionStrategy:SectionStrategy {
+    func sizeForHeader(in section: Section) -> CGSize? {
+        nil
+    }
+    
     func numberOfItems(in section: Section) -> Int {
         return section.items.count
     }
