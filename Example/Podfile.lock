@@ -1,0 +1,16 @@
+PODS:
+  - Hub (0.1.0)
+
+DEPENDENCIES:
+  - Hub (from `../`)
+
+EXTERNAL SOURCES:
+  Hub:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Hub: 802a4f9b1e5936cc36f1b9d1954f10f036ea76a5
+
+PODFILE CHECKSUM: ca81158d3513be57fc3b85a2b96ae3a57203f850
+
+COCOAPODS: 1.14.3

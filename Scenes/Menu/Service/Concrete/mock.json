@@ -1,0 +1,190 @@
+{
+    "data": {
+        "sections": [
+            {
+                "type": "FeedBack",
+                "name": "Feedbacks Recentes",
+                "items": [
+                    {
+                        "icon": "hand.thumbsup.fill",
+                        "name": "Gostei"
+                    },
+                    {
+                        "icon": "hand.thumbsdown.fill",
+                        "name": "Não Gostei"
+                    },
+                    {
+                        "icon": "star.fill",
+                        "name": "Favoritar"
+                    },
+                    {
+                        "icon": "bubble.left.fill",
+                        "name": "Comentários"
+                    },
+                    {
+                        "icon": "heart.fill",
+                        "name": "Curtidas"
+                    },
+                    {
+                        "icon": "flag.fill",
+                        "name": "Reportar"
+                    },
+                    {
+                        "icon": "lightbulb.fill",
+                        "name": "Ideias"
+                    },
+                    {
+                        "icon": "bell.fill",
+                        "name": "Notificações"
+                    },
+                    {
+                        "icon": "questionmark.circle.fill",
+                        "name": "Dúvidas"
+                    },
+                    {
+                        "icon": "pencil.circle.fill",
+                        "name": "Editar Feedback"
+                    }
+                ]
+            },
+            {
+                "type": "ProdutosContratados",
+                "name": "Meus Produtos",
+                "items": [
+                    {
+                        "icon": "creditcard.fill",
+                        "name": "Cartão de Crédito"
+                    },
+                    {
+                        "icon": "creditcard.fill",
+                        "name": "Cartão de Débito"
+                    },
+                    {
+                        "icon": "house.fill",
+                        "name": "Empréstimo"
+                    },
+                    {
+                        "icon": "car.fill",
+                        "name": "Financiamento Veicular"
+                    },
+                    {
+                        "icon": "banknote.fill",
+                        "name": "Investimentos"
+                    },
+                    {
+                        "icon": "chart.bar.fill",
+                        "name": "Poupança"
+                    },
+                    {
+                        "icon": "building.2.fill",
+                        "name": "Seguros"
+                    },
+                    {
+                        "icon": "gift.fill",
+                        "name": "Cashback"
+                    },
+                    {
+                        "icon": "bag.fill",
+                        "name": "Conta Corrente"
+                    },
+                    {
+                        "icon": "dollarsign.circle.fill",
+                        "name": "Moeda Estrangeira"
+                    }
+                ]
+            },
+            {
+                "type": "ProdutosDisponiveis",
+                "name": "Produtos Disponíveis",
+                "items": [
+                    {
+                        "icon": "plus.circle.fill",
+                        "name": "Novo Cartão de Crédito"
+                    },
+                    {
+                        "icon": "plus.circle.fill",
+                        "name": "Conta Poupança"
+                    },
+                    {
+                        "icon": "arrow.right.circle.fill",
+                        "name": "Transferência Internacional"
+                    },
+                    {
+                        "icon": "suitcase.fill",
+                        "name": "Seguro Viagem"
+                    },
+                    {
+                        "icon": "heart.circle.fill",
+                        "name": "Seguro de Vida"
+                    },
+                    {
+                        "icon": "briefcase.fill",
+                        "name": "Plano de Aposentadoria"
+                    },
+                    {
+                        "icon": "link.circle.fill",
+                        "name": "Link de Pagamento"
+                    },
+                    {
+                        "icon": "clock.fill",
+                        "name": "Débito Automático"
+                    },
+                    {
+                        "icon": "doc.plaintext.fill",
+                        "name": "Consórcio"
+                    },
+                    {
+                        "icon": "person.2.fill",
+                        "name": "Conta Conjunta"
+                    }
+                ]
+            },
+            {
+                "type": "MaisProdutos",
+                "name": "Explore Mais Produtos",
+                "items": [
+                    {
+                        "icon": "cart.fill",
+                        "name": "Loja Online"
+                    },
+                    {
+                        "icon": "phone.fill",
+                        "name": "Planos de Telefonia"
+                    },
+                    {
+                        "icon": "headphones.circle.fill",
+                        "name": "Assinatura de Música"
+                    },
+                    {
+                        "icon": "tv.fill",
+                        "name": "Serviço de Streaming"
+                    },
+                    {
+                        "icon": "gamecontroller.fill",
+                        "name": "Assinatura de Jogos"
+                    },
+                    {
+                        "icon": "airplane.circle.fill",
+                        "name": "Milhas Aéreas"
+                    },
+                    {
+                        "icon": "creditcard.circle.fill",
+                        "name": "Cartões de Loja"
+                    },
+                    {
+                        "icon": "calendar.circle.fill",
+                        "name": "Agenda Digital"
+                    },
+                    {
+                        "icon": "camera.fill",
+                        "name": "Serviço de Fotos"
+                    },
+                    {
+                        "icon": "house.circle.fill",
+                        "name": "Imobiliária"
+                    }
+                ]
+            }
+        ]
+    }
+}

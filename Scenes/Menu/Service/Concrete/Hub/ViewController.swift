@@ -7,14 +7,12 @@
 //
 
 import UIKit
-import Hub
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let hub = MenuCoordinator(navigationController: self.navigationController ?? UINavigationController())
-        hub.start()
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

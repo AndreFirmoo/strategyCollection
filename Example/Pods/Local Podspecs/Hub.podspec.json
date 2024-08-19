@@ -1,0 +1,22 @@
+{
+  "name": "Hub",
+  "version": "0.1.0",
+  "summary": "A short description of Hub.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Andre Firmo/Hub",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andre Firmo": "13513431+AndreFirmoo@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/Andre Firmo/Hub.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "source_files": "Hub/Classes/**/*"
+}
