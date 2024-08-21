@@ -135,6 +135,7 @@
 		27D7943B924FA69B39FA671D94364999 /* Hub */ = {
 			isa = PBXGroup;
 			children = (
+				2874561C2C759F1D00A496C8 /* New */,
 				F4341AB4982A3E1D844DB8CEBC2BDD02 /* Coordinator */,
 				15906A67A05D87B5B35836D3227380A5 /* Model */,
 				EF69BA903D833D60C53DBDDC2EE19DCB /* Pod */,
@@ -146,6 +147,13 @@
 			);
 			name = Hub;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		2874561C2C759F1D00A496C8 /* New */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 		33DCBB70BD660E7020FC06FC2A5E216D /* Products */ = {
